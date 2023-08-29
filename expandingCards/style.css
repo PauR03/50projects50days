@@ -1,0 +1,51 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+}
+
+main {
+    display: flex;
+    padding: 9vh;
+    overflow: auto;
+}
+
+div {
+    height: 80vh;
+    background-image: url(https://i.pinimg.com/originals/11/bd/2d/11bd2dd2437227113c173febc8848f1e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0.5;
+    
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: flex 0.7s ease-in;;
+}
+
+div span {
+    display: none;
+}
+
+div:not(:last-child) {
+    margin-right: 20px;
+}
+
+div.active {
+    display: flex;
+    align-items: flex-end;
+    flex: 5;
+}
+
+div.active span {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    color: white;
+}
