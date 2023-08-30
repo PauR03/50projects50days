@@ -22,8 +22,6 @@ window.addEventListener("load", () => {
         steps[progress].classList.add("completed")
         progressLine.style.setProperty("width", 100 / (steps.length - 1) * progress +"%")
 
-        console.log(100 / (steps.length - 1) * progress)
-
         if(progress === steps.length - 1) nextButton.setAttribute("disabled", "true")
         if(progress > 0)prevButton.removeAttribute('disabled')
     })
