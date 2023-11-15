@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+}
+
+nav {
+    background-color: white;
+    position: relative;
+    display: flex;
+}
+
+input {
+    width: 170px;
+    width: 0;
+    height: 20px;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    transition: width 0.3s ease;
+}
+
+.open input {
+    width: 170px;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.open button {
+    transform: translateX(50px);
+}
+
+button i {
+    font-size: x-large;
+}
