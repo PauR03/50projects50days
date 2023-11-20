@@ -1,0 +1,41 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efedd6;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    width: 400px;
+    height: 200px;
+    background-color: steelblue;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+article:nth-child(even) {
+    transform: translateX(100vw);
+}
+
+article:nth-child(odd) {
+    transform: translateX(-100vw);
+}
+
+article.visible {
+    transform: translateX(0vw);
+}
