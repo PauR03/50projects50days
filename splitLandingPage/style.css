@@ -1,0 +1,93 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 50%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 0.3s;
+}
+
+#ps5 {
+    background-image: url(https://raw.githubusercontent.com/bradtraversy/50projects50days/master/split-landing-page/ps.jpg);
+}
+
+#xbox {
+    background-image: url(https://raw.githubusercontent.com/bradtraversy/50projects50days/master/split-landing-page/xbox.jpg);
+}
+
+div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ps5 div {
+    background-color: rgba(87, 84, 236, 0.7);
+}
+
+#xbox div {
+    background-color: rgba(43, 43, 43, 0.8);
+}
+
+h1 {
+    color: white;
+    font-size: 64px;
+}
+
+a {
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+    border: 3px solid white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:visited {
+    color: white;
+}
+
+#ps5 a:hover {
+    background-color: rgba(87, 84, 236, 1);
+    border: 3px solid rgba(87, 84, 236, 1);
+}
+
+#xbox a:hover {
+    background-color: rgba(28, 122, 28, 1);
+    border: 3px solid rgba(28, 122, 28, 1);
+}
+
+.left #ps5 {
+    width: 75%;
+}
+
+.left #xbox {
+    width: 25%;
+}
+
+.right #ps5 {
+    width: 25%;
+}
+
+.right #xbox {
+    width: 75%;
+}
