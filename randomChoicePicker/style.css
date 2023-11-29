@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #2b88f0;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+textarea {
+    border: none;
+    padding: 10px;
+    width: 500px;
+    height: 100px;
+    font-family: inherit;
+}
+
+div {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+span {
+    color: white;
+    margin: 0 5px 10px 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: orange;
+    font-size: 14px;
+}
+
+span.winner {
+    background-color: #273c75;
+}
