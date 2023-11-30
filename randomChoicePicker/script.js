@@ -28,21 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
         div.appendChild(spanChild)
     }
 
-    // function makeRandom() {
-    //     textarea.value = ""
-    //     const span = div.children
-    //     const quantChilds = span.length
-    //     const randomWinner = Math.floor(Math.random() * quantChilds)
-
-    //     for (let i = 0; i < (quantChilds + 5); i++) {
-    //         let uselessRandom = Math.floor(Math.random() * quantChilds)
-    //         span[uselessRandom].classList.add("winner")
-    //         span[uselessRandom].classList.remove("winner")
-    //     }
-
-    //     span[randomWinner].classList.add("winner")
-    // }
-
     function makeRandom() {
         textarea.value = "";
         const span = div.children;

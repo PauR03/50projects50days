@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Muli', sans-serif;
+}
+
+div.backgrounds {
+    position: absolute;
+    z-index: -1;
+}
+
+.background {
+    display: block;
+    height: 50vh;
+    width: 100vw;
+}
+
+#top {
+    background-color: #eafbff;
+}
+
+#bottom {
+    background-color: #5290f9;
+}
+
+nav {
+    position: relative;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: white;
+    transition: width 600ms ease;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 600ms ease;
+    transform: translateX(100%);
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+nav.active a:last-of-type {
+    margin-right: 20px;
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button div {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #5290f9;
+}
+
+button div#line1 {
+    transform: translateY(-5px);
+}
+
+button div#line2 {
+    transform: translateY(5px);
+}
+
+
+nav.active {
+    width: 310px;
+
+}
+
+nav.active a {
+    transform: translateX(0%);
+    opacity: 1;
+    min-width: 10px;
+    margin-left: 10px;
+}
+
+nav.active button div#line1 {
+    transform: rotate(45deg);
+}
+
+nav.active button div#line2 {
+    transform: rotate(-45deg);
+}
