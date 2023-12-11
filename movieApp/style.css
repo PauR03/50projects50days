@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+html {
+    background-color: #22254b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+header {
+    padding: 16px;
+    background-color: #373b69;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header input {
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    height: 25px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 8px 16px;
+    color: white;
+}
+
+header input::placeholder {
+    color: #7378ad;
+}
+
+header input:focus {
+    outline: none;
+    background-color: #22254b;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #22254b;
+}
+
+section {
+    width: 300px;
+    margin: 16px;
+    background-color: #373b69;
+    position: relative;
+    overflow: hidden;
+}
+
+section img {
+    width: 100%;
+}
+
+section footer {
+    padding: 8px 16px 16px;
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+section footer h3 {
+    margin-top: 0;
+    color: white;
+}
+
+section footer span {
+    padding: 4px 8px;
+    background-color: #22254b;
+    font-weight: bold;
+}
+
+section footer span.high {
+    color: lightgreen;
+}
+
+section footer span.medium {
+    color: orange;
+}
+
+section footer span.small {
+    color: red;
+}
+
+section div.overview {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 32px;
+    overflow-y: auto;
+    max-height: 100%;
+    font-size: 16px;
+    transform: translateY(101%);
+    transition: transform 300ms ease;
+}
+
+section:hover div.overview {
+    transform: translateY(0%);
+}
