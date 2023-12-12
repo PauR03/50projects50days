@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+div#slider {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section div.background {
+    background-image: url(https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -15vh;
+    left: -15vw;
+    transition: 0.4s;
+}
+
+button {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+button#left {
+    border-right: 0;
+}
+
+button#right {
+    border-left: 0;
+}
