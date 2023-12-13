@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+    transition: all 0.5s ease-in;
+}
+
+body.black {
+    background-color: black;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: black;
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.black button {
+    background-color: white;
+    color: black;
+}
+
+#analogWatch {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    margin-top: 200px;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: translate(-50%, -100%);
+    background-color: black;
+    transition: all 0.5s ease-in;
+}
+
+.black .hand {
+    background-color: white;
+}
+
+.hour-hand {
+    height: 65px;
+    width: 3px;
+}
+
+.minute-hand {
+    height: 100px;
+    width: 3px;
+    transform: translate(-50%, -100%) rotate(10deg);
+}
+
+.second-hand {
+    height: 100px;
+    width: 3px;
+    background-color: red !important;
+    transform: translate(-50%, -100%) rotate(120deg);
+}
+
+.centre-circle {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border: 3px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#digitalWatch {
+    font-size: 60px;
+}
+
+.black #digitalWatch {
+    color: white;
+}
+
+#date {
+    color: #aaa;
+}
+
+#dayNumber {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+}
+
+.black #dayNumber {
+    background-color: white;
+    color: black;
+}
