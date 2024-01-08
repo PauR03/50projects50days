@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222222;
+    padding: 20px 0;
+    transition: all 300ms ease-in-out;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+    transition: all 300ms ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header.white {
+    padding: 10px 0;
+    background-color: white;
+}
+
+header.white a {
+    color: black;
+}
+
+header a.red {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+article {
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+article::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+article>* {
+    color: white;
+    z-index: 1;
+}
+
+article h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+article p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section p {
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
