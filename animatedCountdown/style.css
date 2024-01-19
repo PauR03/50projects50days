@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#counter {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+div#counter.hide {
+    animation: hide .2s linear;
+    transform: scale(0);
+}
+
+div#counter>div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div#counter span {
+    color: #3498db;
+    font-size: 50px;
+    display: none;
+}
+
+div#counter span.in {
+    display: block;
+    transform: translateX(70px);
+    animation: showNumber 1s linear;
+}
+
+div#counter span.last {
+    animation: lastNumber 1s linear;
+    transform: translateX(0);
+}
+
+div#counter h4 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+div#final {
+    position: absolute;
+    transform: scale(0);
+}
+
+div#final h1 {
+    text-align: center;
+}
+
+div#final.show {
+    animation: show .2s linear;
+    transform: scale(1);
+}
+
+@keyframes showNumber {
+    from {
+        transform: translateX(70px);
+    }
+
+    to {
+        transform: translateX(-70px);
+    }
+}
+
+@keyframes lastNumber {
+    from {
+        transform: translateX(70px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes hide {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes show {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
