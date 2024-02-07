@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Ui Design</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <strong>How satisfied are you with our<br>customer support performance?</strong>
+        <div class="survey">
+            <div id="unhappy" class="rating">
+                <img src="https://openmoji.org/data/color/svg/1F622.svg" alt="">
+                <small>Unhappy</small>
+            </div>
+            <div id="neutral" class="rating">
+                <img src="https://openmoji.org/data/color/svg/1F610.svg" alt="">
+                <small>Neutral</small>
+            </div>
+            <div id="satisfed" class="rating active">
+                <img src="https://openmoji.org/data/color/svg/1F601.svg" alt="">
+                <small>Satisfed</small>
+            </div>
+        </div>
+        <button>Send Review</button>
+    </main>
+    <section>
+        <img src="https://openmoji.org/data/color/svg/2764.svg" alt="">
+        <strong>Thank You!</strong>
+        <br>
+        <strong>Feedback: <span id="finalRating"></span></strong>
+        <p>We'll use your feedback to improve our customer support</p>
+    </section>
+</body>
+
+</html>
